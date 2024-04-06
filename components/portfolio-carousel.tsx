@@ -59,7 +59,7 @@ export function PortfolioCarousel() {
 
   return (
     <div>
-      <Carousel setApi={setApi} className="w-full max-w-screen-lg">
+      <Carousel setApi={setApi} className="w-full max-w-2xl">
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
