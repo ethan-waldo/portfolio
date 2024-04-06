@@ -5,6 +5,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: "Ethan Waldo",
@@ -32,6 +34,8 @@ export default function RootLayout({
         <main>{children}</main>
         <Toaster />
       </div>
+      <Analytics />
+      <SpeedInsights />
       </body>
       </ThemeProvider>
     </html>
