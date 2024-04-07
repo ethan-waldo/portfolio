@@ -30,10 +30,8 @@ export default function RootLayout({
             disableTransitionOnChange
           >
       <body>
-      <div className="absolute inset-0 h-full w-full bg-background bg-[radial-gradient(gray,transparent_1px)] [background-size:16px_16px]">
         <main>{children}</main>
         <Toaster />
-      </div>
       <Analytics />
       <SpeedInsights />
       </body>
